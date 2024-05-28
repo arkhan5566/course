@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+<div class="khan"id="khan">This is an example</div>
+<div class="khansb" id="khansb">
+<img id="pic1" onmouseover="preview(pic1)" onmouseleave="review(pic1)" src="Pic1.png" alt="Sample picture 1">
+<img id="pic2" onmouseover="preview(pic2)" onmouseleave="review(pic2)" src="Pic2.png"alt="Sample picture 2">
+</div>
+
+<script>
+  var x=document.getElementById('khan')
+  function preview(pic){
+    x.style.backgroundImage = 'url("pic1.png")'
+    x.innerHTML=pic.alt
+  }
+function review(pic){
+  x.style.background='aqua';
+  x.innerHTML="this is an example";
+}
+</script>
+
+</body>
+</html>
